@@ -54,62 +54,72 @@ const CallbackForm = () => {
   };
 
   return (
-    <form className="callback-form" onSubmit={handleSubmit}>
-      <h1>Callback Form</h1>
-      <input
-        type="text"
-        name="name"
-        value={name}
-        onChange={(event) => setName(event.target.value)}
-        placeholder={"Name:"}
-        required
-      />
-      <input
-        type="text"
-        name="phone"
-        value={phone}
-        onChange={(event) => setPhone(event.target.value)}
-        placeholder={"Phone:"}
-      />
-      <input
-        type="text"
-        name="company"
-        value={company}
-        onChange={(event) => setCompany(event.target.value)}
-        placeholder={"Company:"}
-      />
-      <input
-        type="email"
-        name="email"
-        value={email}
-        onChange={(event) => setEmail(event.target.value)}
-        placeholder={"Email:"}
-        required
-      />
-      <input
-        type="text"
-        name="subject"
-        value={subject}
-        onChange={(event) => setSubject(event.target.value)}
-        placeholder={"Subject:"}
-        required
-      />
-      <textarea
-        name="problemDescription"
-        value={problemDescription}
-        onChange={(event) => setProblemDescription(event.target.value)}
-        placeholder={"Problem Description:"}
-        required
-      />
-      <DateTimePicker onChange={(value) => setDatetime(value)} />
-      <input type="submit" />
+    <>
+      <form className="callback-form" onSubmit={handleSubmit}>
+        <h1>Callback Form</h1>
+        <input
+          className="input-class"
+          type="text"
+          name="name"
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+          placeholder={"Name:"}
+          required
+        />
+        <input
+          className="input-class"
+          type="text"
+          name="phone"
+          value={phone}
+          onChange={(event) => setPhone(event.target.value)}
+          placeholder={"Phone:"}
+        />
+        <input
+          className="input-class"
+          type="text"
+          name="company"
+          value={company}
+          onChange={(event) => setCompany(event.target.value)}
+          placeholder={"Company:"}
+        />
+        <input
+          className="input-class"
+          type="email"
+          name="email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          placeholder={"Email:"}
+          required
+        />
+        <input
+          className="input-class"
+          type="text"
+          name="subject"
+          value={subject}
+          onChange={(event) => setSubject(event.target.value)}
+          placeholder={"Subject:"}
+          required
+        />
+        <textarea
+          name="problemDescription"
+          value={problemDescription}
+          onChange={(event) => setProblemDescription(event.target.value)}
+          placeholder={"Problem Description:"}
+          required
+        />
+        <DateTimePicker
+          className="date-time-picker"
+          onChange={(value) => setDatetime(value)}
+        />
 
+        <input className="btn" type="submit" value="send" />
+      </form>
       <FeedbackModal
-        visible={(() => (visible ? "block" : "none"))()}
-        changeVisibility={() => changeVisibility()}
-        modalText={modalText}
-      />
-    </form>
+          visible={(() => (visible ? "flex" : "none"))()}
+          changeVisibility={() => changeVisibility()}
+          modalText={modalText}
+        />
+    </>
   );
 };
 

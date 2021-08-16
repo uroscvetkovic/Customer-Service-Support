@@ -5,7 +5,24 @@
     transform: translate(-50%, -50%);
     width: 200px;
     height: 125px;
-    border: 0.1px solid #8676ed69;
-    box-shadow: 2px #8676ed;
-    background-color: #76eda2;
+    border-radius: 20px;
+    background-color: #98FB98;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h1, p {
+        margin: 0;
+        color: #292929;
+    }
+
+    button {
+        width: 60px; 
+        background-color: #292929;
+        border: none;
+        border-radius: 10px;
+        color: blanchedalmond;
+    }
 }

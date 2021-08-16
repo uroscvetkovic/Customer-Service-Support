@@ -1,3 +1,8 @@
+html {
+  background: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?dpr=0.800000011920929&auto=format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=") no-repeat center center fixed; 
+  background-size: cover;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,7 +18,6 @@ code {
 }
 
 #root {
-  background-color: rgb(237, 240, 240);
   height:100vh;
   display: flex;
   justify-content: center;
