@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DatePicker, { CalendarContainer } from "react-datepicker";
+import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -15,7 +15,7 @@ const DateTimePicker = (props) => {
     const selectedDate = new Date(date);
     const selectedTime =
       selectedDate.getHours() + selectedDate.getMinutes() / 60;
-    if (date.getDay() == 0) return 8 <= selectedTime && 13 >= selectedTime;
+    if (date.getDay() === 0) return 8 <= selectedTime && 13 >= selectedTime;
     else return 8 <= selectedDate.getHours() && 20 >= selectedTime;
   };
 

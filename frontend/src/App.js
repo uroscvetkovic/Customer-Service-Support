@@ -1,10 +1,8 @@
-import './App.css';
-import {CallbackForm} from './components';
+import "./App.css";
+import { CallbackForm } from "./components";
 
 function App() {
-  return (
-     <CallbackForm />
-  );
+  return <CallbackForm />;
 }
 
 export default App;

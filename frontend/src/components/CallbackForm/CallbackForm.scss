@@ -1,16 +1,12 @@
 .callback-form {
-
-    background-color: rgba(207, 230, 230, 0.775);
-    max-width: 400px;
-    width: 400px;
-    height: 500px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-    textarea {
-        height: 150px;
-    }
-
+  background-color: rgba(207, 230, 230, 0.775);
+  padding: 25px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 400px;
+  textarea {
+    height: 150px;
+  }
 }

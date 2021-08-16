@@ -1,0 +1,11 @@
+.feedback-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 125px;
+    border: 0.1px solid #8676ed69;
+    box-shadow: 2px #8676ed;
+    background-color: #76eda2;
+}
