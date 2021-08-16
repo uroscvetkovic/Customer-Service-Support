@@ -1,11 +1,5 @@
-#django
-db.sqlite3
-*.log
-*.pot
-*.pyc
-__pycache__
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-#react
 # dependencies
 /node_modules
 /.pnp
