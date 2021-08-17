@@ -8,14 +8,14 @@ const DateTimePicker = (props) => {
 
   const isWeekday = (date) => {
     const day = date.getDay();
-    return day !== 6;
+    return day !== 0;
   };
 
   const filterPassedTime = (date) => {
     const selectedDate = new Date(date);
     const selectedTime =
       selectedDate.getHours() + selectedDate.getMinutes() / 60;
-    if (date.getDay() === 0) return 8 <= selectedTime && 13 >= selectedTime;
+    if (date.getDay() === 6) return 8 <= selectedTime && 13 >= selectedTime;
     else return 8 <= selectedDate.getHours() && 20 >= selectedTime;
   };
 
